@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播</title>
+	<link rel="stylesheet" href="css/swipe.css">
+</head>
+<body>
+<div id="canvas"></div>
+<script src="js/swipe.js"></script>
+<script>
+	var list = [{
+		height: 950,
+		width: 800,
+		img: "image/1.jpg"
+	}, {
+		height: 1187,
+		width: 900,
+		img: "image/2.jpg"
+	}, {
+		height: 766,
+		width: 980,
+		img: "image/3.jpg"
+	}, {
+		height: 754,
+		width: 980,
+		img: "image/4.jpg"
+	}, {
+		height: 493,
+		img: "image/5.jpg",
+		width: 750
+	}, {
+		height: 500,
+		img: "image/6.jpg",
+		width: 750
+	}, {
+		height: 600,
+		img: "image/7.jpg",
+		width: 400
+	}];
+	new Slider({
+		dom: document.getElementById('canvas'),
+		list: list
+	});
+</script>
+</body>
+</html>
